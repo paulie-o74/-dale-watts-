@@ -1,4 +1,18 @@
 /* font-family: 'Comforter', cursive;
 font-family: 'Oswald', sans-serif; */
 
-background-image: linear-gradient(to top, #cff09e, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
+/* color palette: Adrift and Adrift in Neon, color lovers */
+:root {
+    --hue: #F0FB64;
+    --lime: #ADF841 ;
+    --green: #05FA82 ;
+    --seafoam: #33FCDB ;
+    --cyan: #0AF0EA ;
+  }
+
+body {
+    background-image: linear-gradient(to top, #cff09e, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
