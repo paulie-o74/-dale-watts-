@@ -13,6 +13,6 @@ font-family: 'Oswald', sans-serif; */
 body {
     background-image: linear-gradient(to top, #cff09e, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
     height: 100vh;
-    margin: 0;
+    margin: 10vw;
     font-family: 'Oswald', sans-serif;
 }
