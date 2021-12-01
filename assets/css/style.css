@@ -1,3 +1,5 @@
+
+
 /* font-family: 'Comforter', cursive;
 font-family: 'Oswald', sans-serif; */
 
@@ -10,9 +12,69 @@ font-family: 'Oswald', sans-serif; */
     --cyan: #0AF0EA ;
   }
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 body {
-    background-image: linear-gradient(to top, #cff09e, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
+    background-image: linear-gradient(to top, #9ca58f, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
     height: 100vh;
-    margin: 10vw;
+    margin: 0;
+    padding: 0;
     font-family: 'Oswald', sans-serif;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+  width: 1000px;
+  max-width: 75%;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px #0b486b;
+  
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 15px;
+  margin: 20px 20px;
+}
+
+.button1 {
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #0b486b;
+  color: white;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #0b486b;
+}
+
+.button-correct {
+  background-color: #9ad49d;
+  color: black;
+}
+
+.start-button, .next-button {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.controls {
+
+}
+
+.hide {
+  display: none;
+}
+
+
