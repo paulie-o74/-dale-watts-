@@ -1,9 +1,10 @@
 
-
 /* font-family: 'Comforter', cursive;
 font-family: 'Oswald', sans-serif; */
 
 /* color palette: Adrift and Adrift in Neon, color lovers */
+
+/* Basic resets */
 :root {
     --hue: #F0FB64;
     --lime: #ADF841 ;
@@ -12,9 +13,16 @@ font-family: 'Oswald', sans-serif; */
     --cyan: #0AF0EA ;
   }
 
-  *, *::before, *::after {
-    box-sizing: border-box;
+  *, a,  *::before, *::after {
+    /* box-sizing: border-box; */
+    text-decoration: none;
   }
+
+  a:visited {
+    color: inherit;
+  }
+
+/* Main body styling */
 
 body {
     background-image: linear-gradient(to top, #9ca58f, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
@@ -22,9 +30,7 @@ body {
     padding: 0;
     font-family: 'Oswald', sans-serif;
     width: 100vw;
-    justify-content: center;
-    
-    
+    justify-content: center;  
 }
 
 .logo {
@@ -36,6 +42,7 @@ body {
   font-size: 500%;
 }
 
+/* index styling */
 .container1 {
   text-align: center;
   justify-content: center;
@@ -44,8 +51,8 @@ body {
 }
 
 .container2 {
-  width: 1000px;
-  max-width: 75%;
+  width: 75%;
+  /* max-width: 75%; */
   text-align: center;
   padding: 10px;
   background-color: white;
@@ -60,7 +67,9 @@ body {
   flex-wrap: wrap;
 }
 
-.button-grid {
+/* Button styling */
+
+/* .button-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 15px;
@@ -93,14 +102,28 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   padding: 5px 10px;
-}
+} */
 
-.controls {
 
-}
 
 .hide {
   display: none;
 }
 
 
+
+
+/* Media queeries */
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
