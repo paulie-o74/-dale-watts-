@@ -25,10 +25,16 @@ body {
     display: flex;
     width: 100vw;
     justify-content: center;
-    align-items: center;
+    
 }
 
-.container {
+.logo {
+  font-family: 'Comforter', cursive;
+}
+
+
+
+.container1 {
   width: 1000px;
   max-width: 75%;
   text-align: center;
