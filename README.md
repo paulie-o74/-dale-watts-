@@ -1,108 +1,452 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Paul Thomas PT
+(Developer: Paul Thomas O´Riordan)
 
-Welcome rashdogg74,
+![Mockup image](assets/images/am-i-responsive.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage](https://rashdogg74.github.io/paul_thomas_pt/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
 
-## Gitpod Reminders
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Project Goals
 
-`python3 -m http.server`
+### User Goals
+- To 
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
+- I
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Target Audience
+- In
 
-A blue button should appear to click: _Make Public_,
+### User Requirements and Expectations
 
-Another blue button should appear to click: _Open Browser_.
+- A simple and intuitive navigation system.
+- Quickly and easily find relevant information.
+- Links that work as expected.
+- A quiz which works correctly and records all high scores.
+- Regularly updating music trends and playlists.
+- Well presented and a visually appealing design regardless of device.
+- An easy way to contact the business.
+- Accessibility.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories
 
-To log into the Heroku toolbelt CLI:
+#### First-time User 
+1. As a first time user, I want to
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Returning User
+5. As a returning user, I want to 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Site Owner 
+11. As the site owner, I want
 
-------
+## Design
 
-## Release History
+### Design Choices
+The webpage was designed with
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Colour
+For the colour scheme cool and vibrant colors were chosen to reflect the calmness and simplicity of my own character and the services the website offers, as well as being energetic, and inspiring movement and vibrance. 
+<br>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Colour scheme](assets/images/)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Fonts
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<br>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Structure
+The page is structured in a well known, recognizable, user-friendly, and easy to learn manner. Upon arriving at the website the user sees a familiar type of navigation bar with the business' logo on the left side and the navigation links to the right. 
+The website consists of five separate pages: 
+- A homepage 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Wireframes
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Shown below are the initial wireframes which changed throughout the development process. Reasons include: increasing subject knowledge of UX design and CSS options, removal of bootstrap elements, the need for a cleaner more streamlined design. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Home
+![Home](assets/images/)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Discover 
+![About](assets/images/)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Quiz 
+![Group Training ](assets/images/)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- High Scores
+![Private Training](assets/images/)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- Contact 
+![Contact](assets/images/)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## Technologies Used
 
-## FAQ about the uptime script
+### Languages
+- HTML
+- CSS
+- Javascript
 
-**Why have you added this script?**
+### Frameworks & Tools
+- Git
+- GitHub
+- Gitpod
+- Bootstrap
+- Convertio
+- Balsamiq
+- Google Fonts
+- Color Space
+- Font Awesome
+- Favicon
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Features
+The page consists of five pages and the main features include 
 
-**How will this affect me?**
+### Logo and Navigation Bar
+<details>
+<summary>Screenshot nav bar</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Screenshot nav bar mobile</summary>
+<img src="assets/images/" width="500">
+</details>
+- Featured on all five pages.
+- The navbar is fully responsive and changes to a toggler (hamburger menu) on smaller screens and includes links to the 
+- If a user hovers over a nav bar option in desktop mode an animation shows them which option they are choosing. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Footer
+<details>
+<summary>Screenshot</summary>
+<img src="assets/images/" width="500">
+</details>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Discover
+<details>
+<summary>Screenshot</summary>
+<img src="assets/images/" width="500">
+</details>
+- 
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Quiz 
+<details>
+<summary>Screenshot</summary>
+<img src="assets/images/" width="500">
+</details>
+- 
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### High Scores
+<details>
+<summary>Screenshot</summary>
+<img src="assets/images/" width="500">
+</details>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Contact 
+<details>
+<summary>Screenshot</summary>
+<img src="assets/images/" width="500">
+</details>
 
----
 
-Happy coding!
+### User stories covered
+- All of the above highlights user stories 1-13 being covered.
+
+
+## Validation
+
+### HTML Validation
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors nor warnings to show.
+
+<details>
+<summary>Home</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Discover</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Quiz</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>High Scores</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Contact</summary>
+<img src="assets/images/" width="500">
+</details>
+
+
+### CSS Validation
+<details>
+<summary>Screenshot</summary>
+<img src="assets/images/" width="500">
+</details>
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+
+
+
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. 
+<details>
+<summary>Home</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Discover</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Quiz</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>High Scores</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Contact</summary>
+<img src="assets/images/" width="500">
+</details>
+
+### Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+
+<details>
+<summary>Home</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Discover</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Quiz</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>High Scores</summary>
+<img src="assets/images/" width="500">
+</details>
+<details>
+<summary>Contact</summary>
+<img src="assets/images/" width="500">
+</details>
+
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+- HP desktop
+- Macbook
+- iPad
+- iPhone X
+- Huawei mobile
+
+In addition, the site was tested using Google Chrome Developer Tools Device Toggling option for all available device options.
+
+### Browser compatibility
+The website was tested on the following browsers:
+- Google Chrome
+- Mozilla Firefox
+- Safari
+
+### Testing user stories
+
+1. As a first time user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home page | Navigate to the type of training you are most interested in | Locating group or private training information | Works as expected |
+| Footer - social media links | On any page scroll down to the footer | Find the links to the social media accounts | Works as expected |
+
+
+2. As a first time user, .
+
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Group / Private training pages | Navigate to the Menu  | See training options and descriptions | Works as expected |
+
+
+
+3. As a first time user, . 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+
+
+4. As a first time user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Gallery | Navigate to the home page or either training page | Find pictures of the classes | Works as expected |
+
+
+
+5. As a returning user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Group-training page | Navigate to the group training page and locate the class table | Find the class schedule | Works as expected |
+
+
+6. As a returning user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+
+
+7. As a returning user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+
+
+
+8. As a returning user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About page | Navigate to the contact page and locate the section on Paul Thomas | Read the page | Works as expected |
+
+
+
+9. As a returning user, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+
+
+10. As a returning user,.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Map | On group training page, scroll to the bottom to find embedded map showing class locations | Click on map locations | Works as expected | 
+
+
+
+11. As the site owner,.
+
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+| About page | Navigate to the contact page and locate the section on Paul Thomas | Read the page | Works as expected |
+
+
+
+12. As the site owner, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Group / Private training pages | Navigate to the Menu  | See training options and descriptions | Works as expected |
+| Home page | Navigate to the type of training you are most interested in | Locating group or private training information | Works as expected |
+
+
+13. As the site owner, .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About page | Navigate to the contact page and locate the section on client testimonies at the bottom of the page | Read the section | Works as expected |
+
+
+
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab.
+2. Select Pages from the menu on the left hand-side.
+3. For the source select Branch: master.
+4. After the webpage refreshes automatically a ribbon on the top says: "Your site is published at "https://rashdogg74.github.io/"
+
+You can fork the repository by following these steps:
+1. Go to the GitHub repository.
+2. Click on Fork button in upper right hand corner.
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository.
+2. Locate the Code button above the list of files and click it.
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
+
+## Credits
+Images not referenced below are owned by the developer.
+
+### Media
+In order of appearance:
+- Photo by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> on <a href="https://www.flaticon.com/premium-icon/music-therapy_6197540">Flaticon</a>
+- Photo by <a href="https://www.flaticon.com/authors/alkhalifi-design">alkhalifi design</a> on <a href="https://www.flaticon.com/premium-icon/trending-topic_3133923">Flaticon</a>
+- Photo by <a href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a> on <a href="https://www.flaticon.com/free-icon/podium_1228297">Flaticon</a>
+- Photo by <a href="https://www.flaticon.com/authors/andrean-prabowo">Andrean Prabowo</a> on <a href="https://www.flaticon.com/premium-icon/headphone_3756812">Flaticon</a>
+  
+### Code
+In order of appearance:
+- 
+- 
+- 
+- 404 page was build using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) and (https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing) Dani Krossing on youtube. 
+
+## Acknowledgements
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his feedback, advice, guidance and support.
+- To the lovely people on the Code Institute Slack for encouraging all the way.
+- To the Code Institute tutors for helping me with a couple of critical issues.
+- To my coworkers at Hastings school, Madrid for encouraging me and offering me help when needed with workload.

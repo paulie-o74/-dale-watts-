@@ -67,6 +67,42 @@ body {
   flex-wrap: wrap;
 }
 
+
+/* Quiz page styling  */
+
+.quiz-body {
+  height: 100vh;
+}
+
+.quiz-container {
+  width: 75%;
+  /* max-width: 75%; */
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px #0b486b;
+  margin: 20px auto;
+}
+
+.button1 {
+  border-radius: 5px;
+  border: 3px solid #0b486b;
+  padding: 5px 10px;
+  background-color: #0b486b;
+  color: white;
+}
+
+.button1:hover {
+  border: 3px solid black;
+}
+
+.button-grid {
+  grid-template-columns: repeat(2, auto);
+  gap: 15px;
+  margin: 20px auto;
+}
+
 /* Button styling */
 
 /* .button-grid {
