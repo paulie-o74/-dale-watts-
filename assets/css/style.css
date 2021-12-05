@@ -18,23 +18,32 @@ font-family: 'Oswald', sans-serif; */
 
 body {
     background-image: linear-gradient(to top, #9ca58f, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
-    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-    display: flex;
     width: 100vw;
     justify-content: center;
+    
     
 }
 
 .logo {
   font-family: 'Comforter', cursive;
+  color: white;
 }
 
-
+#logo-bg {
+  font-size: 500%;
+}
 
 .container1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+.container2 {
   width: 1000px;
   max-width: 75%;
   text-align: center;
@@ -42,7 +51,13 @@ body {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px 2px #0b486b;
-  
+  margin: 20px auto;
+}
+
+#container3 {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .button-grid {
