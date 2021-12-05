@@ -111,17 +111,41 @@ body {
 }
 
 
+/* Footer and social links  */
 
+.footer {
+  height: auto;
+  background-color: #ffffff00;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  
+}
+
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer ul>li {
+  display: inline;
+}
+
+.footer i {
+  font-size: 3rem;
+  padding: 5%;
+  color: #0b486b;
+}
+
+/* Footer and social links  */
 
 /* Media queeries */
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   #container3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  #container4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
