@@ -112,6 +112,16 @@ body {
   background-color: rgb(255, 49, 117);
   color: black;
 }
+/* heads up display styling */
+#hud {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hud-prefix {
+  text-align: center;
+  
+}
 
 /* Button styling */
 
