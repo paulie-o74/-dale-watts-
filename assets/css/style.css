@@ -103,6 +103,16 @@ body {
   margin: 20px auto;
 }
 
+.correct {
+  background-color: #9ad49d;
+  color: black;
+}
+
+.incorrect {
+  background-color: rgb(255, 49, 117);
+  color: black;
+}
+
 /* Button styling */
 
 /* .button-grid {
