@@ -52,7 +52,6 @@ body {
 
 .container2 {
   width: 75%;
-  /* max-width: 75%; */
   text-align: center;
   padding: 10px;
   background-color: white;
@@ -76,7 +75,6 @@ body {
 
 .quiz-container {
   width: 75%;
-  /* max-width: 75%; */
   text-align: center;
   padding: 10px;
   background-color: white;
@@ -138,12 +136,24 @@ input {
   margin-bottom: 1rem;
   width: 75%;
   padding: 1.5rem;
-  font-size: ;
 }
 
 .endButtons {
   width: 75%;
   margin: 1rem auto;
+}
+
+
+/* highscores styling */
+
+#highScoresList {
+  list-style: none;
+  margin-bottom: 1rem auto;
+  padding-left: 0;
+}
+
+.high-score {
+  font-size: 1.5rem;
 }
 
 /* Button styling */
