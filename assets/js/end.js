@@ -20,6 +20,6 @@ saveHighScore = e => {
     }
     highScores.push(score);
 
-    highScores.sort
+    highScores.sort( (a,b) => b.score - a.score)
     console.log(highScores);
 };
