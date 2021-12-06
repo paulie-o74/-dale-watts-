@@ -2,7 +2,8 @@ const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
-
+const loader = document.getElementById('loader');
+const game = document.getElementById('game');
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -48,6 +49,8 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
+    game.classList.remove("hide");
+    loader.classList.add("hide");
 };
 
 getNewQuestion = () => {
@@ -103,21 +106,6 @@ incrementScore = num => {
 
 
 
-
-// end page javascript
-
-
-// const username = document.getElementById("username");
-// const saveScoreButton = document.getElementById("saveScoreButton");
-// if (saveScoreButton) {
-//     username.addEventListener("keyup" , () => {
-//     saveScoreButton.disabled = !username.value;
-// })};
-
-// saveHighScore = e => {
-//     console.log("clicked the save button!");
-//     e.preventDefault();
-// };
 
 
 
