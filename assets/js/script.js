@@ -9,32 +9,18 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
-        question: "Inside which HTML element do we put the javascript?",
-        choice1: "<script>",
-        choice2: "<js>",
-        choice3: "<java>",
-        choice4: "<scripting>",
-        answer: 1,
-    },
-    {
-        question: "Inside which HTML element do we put the css?",
-        choice1: "<c>",
-        choice2: "<ss>",
-        choice3: "<css>",
-        choice4: "<styles>",
-        answer: 3,
-    },
-    {
-        question: "Inside which HTML element do we put the html?",
-        choice1: "<h>",
-        choice2: "<t>",
-        choice3: "<m>",
-        choice4: "<html>",
-        answer: 4,
-    },
-]
+let questions = [];
+
+fetch("questions.json").then(res => {
+    return res.json();
+})
+.then(loadedQuestions => {
+    questions = loadedQuestions;
+    startGame();
+});
+.catch(err => {
+    console.error(err);
+});
 
 // constants
 
@@ -99,7 +85,7 @@ incrementScore = num => {
     scoreText.innerText = score;
 }
 
-startGame();
+
 
 
 // end page javascript
