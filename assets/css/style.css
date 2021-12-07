@@ -78,7 +78,7 @@ body {
 /* Quiz page styling  */
 
 .quiz-body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .quiz-container {
@@ -227,14 +227,22 @@ input {
 
 /* Footer and social links  */
 
+.footer-index {
+  height: auto;
+  background-color: #ffffff00;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .footer {
   height: auto;
   background-color: #ffffff00;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  position:absolute;
+  bottom:0;
   width: 100%;
-  
 }
 
 .footer ul {
@@ -248,6 +256,22 @@ input {
 }
 
 .footer i {
+  font-size: 3rem;
+  padding: 5%;
+  color: #0b486b;
+}
+
+.footer-index ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-index ul>li {
+  display: inline;
+}
+
+.footer-index i {
   font-size: 3rem;
   padding: 5%;
   color: #0b486b;
