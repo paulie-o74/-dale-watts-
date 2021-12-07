@@ -1,4 +1,5 @@
-
+const quizContainer = document.getElementById('form');
+const container2 = document.getElementById('success');
 
 function sendMail() {
 var tempParams = {
@@ -9,5 +10,16 @@ var tempParams = {
     emailjs.send('service_zgolv4m', 'template_54vj3xp', tempParams)
     .then(function(res){
         console.log("success", res.status);
-    })
-}
+    });
+};
+
+
+var a;
+function successMessage() {
+     if (a==1) {
+     } else {
+        document.getElementById("success").classList.remove("hide");
+        document.getElementById("form").classList.add("hide");
+        return a = 1;
+     };
+ };
