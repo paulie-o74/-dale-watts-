@@ -101,3 +101,55 @@ return {
 
 })(); //These 2 parenthesis means the function fires immediately
 
+//UI Module
+const UIController = (function () {
+
+    //Object to hold references to HTML selectors
+    const DOMElements = {
+        selectGenre: '#select_genre',
+        selectPlaylist: '#select_playlist',
+        buttonSubmit: 'btn_submit',
+        divSongDetail: '#song-detail',
+        hfToken: 'hidden_token',
+        divSongList: '.song-list'
+    }
+
+    //Public Methods
+    return {
+
+        //Method to get input fields
+        inputField() {
+            return {
+                genre: document.querySelector(DOMElement.selectGenres),
+                playlist: document.querySelector(DOMElements.selectPlaylist),
+                songs: document.querySelector(DOMElements.divSongList),
+                submit: document.querySelector(DOMElements.buttonSubmt),
+                songDetail: document.querySelector(DOMElements.divSongDetail),
+            }
+        },
+
+        //need methods to create select list option
+        createGenre(text, value) {
+
+        },
+
+        createPlaylist(text, value) {
+
+        }, 
+
+        //need method to create a track list group item
+        createTrack(id, name) {
+
+        },
+
+        //need method to create the song detail
+        createSongDetail(img, title, artist) {
+
+            const detailDiv = document.querySelector(DOMElements.divSongDetail);
+            //any time a user clicks a new song we need to clear out the song detail div
+            detailDiv.innerHTML = '';
+
+            const html = 
+        }
+    }
+})
