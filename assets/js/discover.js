@@ -128,18 +128,21 @@ const UIController = (function () {
             }
         },
 
-        //need methods to create select list option
+        //need methods to create select list option. Then innerAdjacentHTML to enter HTML into specified place (beforeend means the last child element)
         createGenre(text, value) {
-
+            const html = `<option value="${value}">${text}</option>`;
+            document.querySelector(DOMElements.selectGenre).insertAdjacentHTML('beforeend', html);
         },
 
         createPlaylist(text, value) {
-
+            const html = `<option value="${value}">${text}</option>`;
+            document.querySelector(DOMElements.selectPlaylist).insertAdjacentHTML('beforeend', html);
         }, 
 
         //need method to create a track list group item
         createTrack(id, name) {
-
+            const html = `<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${id}">${name}</a>`;
+            document.querySelector(DOMElements.divSongList).insertAdjacentHTML('beforeend', html);
         },
 
         //need method to create the song detail
@@ -150,6 +153,36 @@ const UIController = (function () {
             detailDiv.innerHTML = '';
 
             const html = 
-        }
+            `
+            <div class= "row col-sm-12 px-0">
+                <img src="${img}" alt="">
+            </div>
+            <div class= "row col-sm-12 px-0">
+                <label for="Genre" class="form-label col-sm-12">${title}:</label>
+            </div>
+            <div class= "row col-sm-12 px-0">
+            <label for="artist" class="form-label col-sm-12">${artist}:</label>
+            </div>
+            `;
+
+            detailDiv.insertAdjacentHTML('beforeend', html)
+        },
+
+        resetTrackDetail() {
+            this.inputField().songDetail.innerHTML = '';
+        },
+
+        resetTracks() {
+            this.inputField().songs.innerHTML = '';
+            this.resetTrackDetail();
+        },
+
+        resetPlaylist() {
+            this.inputField().playlist.innerHTML = '';
+            this.resetTracks
+        }, 
     }
 })
+
+// Up until this point... UI has nothing to do with api (seperation of concerns)
+
