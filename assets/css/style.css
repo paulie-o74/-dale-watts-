@@ -66,6 +66,14 @@ body {
   flex-wrap: wrap;
 }
 
+.container4 {
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  margin: 20px auto;
+}
+
 
 /* Quiz page styling  */
 
