@@ -182,7 +182,9 @@ const UIController = (function () {
             this.resetTracks
         }, 
     }
-})
+})();
 
 // Up until this point... UI has nothing to do with api (seperation of concerns)
+
+// Next need to make a module (app) that will use both the above to pull the data from spotify and populate the UI fields 
 
