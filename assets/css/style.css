@@ -5,13 +5,6 @@ font-family: 'Oswald', sans-serif; */
 /* color palette: Adrift and Adrift in Neon, color lovers */
 
 /* Basic resets */
-:root {
-    --hue: #F0FB64;
-    --lime: #ADF841 ;
-    --green: #05FA82 ;
-    --seafoam: #33FCDB ;
-    --cyan: #0AF0EA ;
-  }
 
   *, a,  *::before, *::after {
     /* box-sizing: border-box; */
@@ -188,8 +181,6 @@ input {
 .hide {
   display: none;
 }
-
-
 
 /* Footer and social links  */
 
