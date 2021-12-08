@@ -9,12 +9,12 @@ const APIController = (function() {
     const _getToken = async () => {
         // spotify code
         const result = await fetch('https://accounts.spotify.com/api/token' , {
-            method: 'POST' ,
+            method: 'POST',
             headers: {
-                'content-Type' : 'application/x-www-form-urlencoded' , 
-                'Authorizatiion' : 'Basic' + btoa(clientId + clientSecret)
+                'Content-Type' : 'application/x-www-form-urlencoded' , 
+                'Authorization' : 'Basic' + btoa(clientId + ':' + clientSecret)
             },
-            body: 'grant_type-client_credentials'
+            body: 'grant_type=client_credentials'
         });
 
         const data = await result.json(); // Get data from body: and place in variable called result and convert that data to JSON
@@ -32,7 +32,7 @@ const _getGenres = async (token) => {
 
     const result = await fetch(`https://api.spotify.com/v1/browse/categories`, 
     {
-        method = 'GET' ,
+        method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
 
@@ -46,8 +46,8 @@ const _getPlaylistByGenre = async (token, category_id) => {
     const limit = 10;
     const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists?limit=${limit}`, //template literals embedding expressions directly inside the string
     {
-        method = 'GET',
-        headers: { 'Authorization' : 'Bearer' + token}
+        method: 'GET',
+        headers: { 'Authorization' : 'Bearer ' + token}
     });
 
     const data = await result.json(); // same method as above
@@ -59,7 +59,7 @@ const _getTracks = async (token, tracksEndPoint) => {
     const limit = 10;
     const result = await fetch(`${tracksEndPoint}?limit=${limit}` ,
     {
-        method = 'GET',
+        method: 'GET',
         headers: { 'Authorization' : 'Bearer' + token}
     });
 
@@ -72,7 +72,7 @@ const _getTrack = async (token, trackEndPoint) => {
     const limit = 10;
     const result = await fetch(`${tracksEndPoint}` ,
     {
-        method = 'GET',
+        method: 'GET',
         headers: { 'Authorization' : 'Bearer' + token}
     });
 
@@ -120,11 +120,11 @@ const UIController = (function () {
         //Method to get input fields
         inputField() {
             return {
-                genre: document.querySelector(DOMElement.selectGenres),
+                genre: document.querySelector(DOMElements.selectGenres),
                 playlist: document.querySelector(DOMElements.selectPlaylist),
-                songs: document.querySelector(DOMElements.divSongList),
-                submit: document.querySelector(DOMElements.buttonSubmt),
-                songDetail: document.querySelector(DOMElements.divSongDetail),
+                tracks: document.querySelector(DOMElements.divSongList),
+                submit: document.querySelector(DOMElements.buttonSubmit),
+                songDetail: document.querySelector(DOMElements.divSongDetail)
             }
         },
 
@@ -218,9 +218,9 @@ const APPController = (function(UICtrl, APICtrl) {
         //Get the selected genreId
         const genreId = genreSelect.options[genreSelect.selectedIndex].value;
         //Get the playlist data from Spotify based on the genre
-        const playlist = await 
+        const playlist = await APICtrl.getPlaylistByGenre(token, genreId);
         // Load the playlist
-        playlist.forEach(p => UICtrl.createPlaylist);
+        playlist.forEach(p => UICtrl.createPlaylist(p.name, p.tracks.href));
     });
 
     //Create submit button click event listener
@@ -252,7 +252,7 @@ const APPController = (function(UICtrl, APICtrl) {
         // Get the track endpoint
         const trackEndPoint = e.target.id;
         //Get the track object
-        const track - await APICtrl.getTrack(token, trackEndPoint);
+        const track = await APICtrl.getTrack(token, trackEndPoint);
         //Load the track details
         UICtrl.createTrackDetail(track.album.images[2].url, track.name, track.artists[0].name);
     });
