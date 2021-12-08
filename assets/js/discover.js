@@ -2,8 +2,8 @@
 const APIController = (function() {
 
     //2 variables
-    const clientId = '';
-    const clientSecret = '';
+    const clientId = '420e58a078824941ac00393899f9d484';
+    const clientSecret = '5c52722f64f74309834d6c82f311cc45';
 
     // Private methods
     const _getToken = async () => {
@@ -32,8 +32,8 @@ const _getGenres = async (token) => {
 
     const result = await fetch(`https://api.spotify.com/v1/browse/categories`, 
     {
-        method = 'GET',
-        headers: { 'Authorization' : 'Bearer' + token}
+        method = 'GET' ,
+        headers: { 'Authorization' : 'Bearer ' + token}
     });
 
     const data = await result.json(); // same method as above
@@ -188,3 +188,83 @@ const UIController = (function () {
 
 // Next need to make a module (app) that will use both the above to pull the data from spotify and populate the UI fields 
 
+const APPController = (function(UICtrl, APICtrl) {
+
+    // Get input field object ref
+    const DOMInputs = UICtrl.inputField();
+
+    // Get genres on page load... using async allows us to use await so that we don't look for the token until we have retrieved it
+    const loadGenres = async () => {
+        //Get the token
+        const token = await APICtrl.getToken();
+        //store the token on the page
+        UICtrl.storeToken(token);
+        //Get the genres
+        const genres = await APICtrl.getGenres(token);
+        // Populate our genres select element (loop through each Genre using for each) then populate teh select field
+        genres.forEach(element => UICtrl.createGenre(element.name, element.id));
+
+    }
+
+    //Create genre change event listener
+    DOMInputs.genre.addEventListener('change', async () => {
+
+        //when user changes genres, we need to reset the subsequent fields
+        UICtrl.resetPlaylist();
+        //Get the token, add method to store the token on the page so we don't need to keep hitting the API for the token
+        const token = UICtrl.getStoredToken().token;
+        //Get the genre select field
+        const genreSelect = UICtrl.inputField().genre;
+        //Get the selected genreId
+        const genreId = genreSelect.options[genreSelect.selectedIndex].value;
+        //Get the playlist data from Spotify based on the genre
+        const playlist = await 
+        // Load the playlist
+        playlist.forEach(p => UICtrl.createPlaylist);
+    });
+
+    //Create submit button click event listener
+    DOMInputs.submit.addEventListener('click', async (e) => {
+        //prevent page reset
+        e.preventDefault();
+        UICtrl.resetTracks();
+        //Get the token
+        const token = UICtrl.getStoredToken().token;
+        //Get the playlist field
+        const playlistSelect = UICtrl.inputField().playlist;
+        //Get the selected playlist
+        const tracksEndPoint = playlistSelect.options[playlistSelect.selectedIndex].value;
+        // Get the tracks from the api
+        const tracks = await APICtrl._getTracks(token, tracksEndPoint);
+        // Populate select list 
+        tracks.forEach(t => UICtrl.createTrack(t.track.href, t.track.name));
+    });
+
+    //create song selection event listener... This is using event delegation, add the event listener to the parent div and when you click on 
+    // any of the chicl elements then we also can recognise that it's been clicked
+    // we use the e.target to determine which div we actually clicked on
+    DOMInputs.tracks.addEventListener('click', async (e) => {
+        //prevent page reset
+        e.preventDefault();
+        UICtrl.resetTrackDetail();
+        //Get the token
+        const token = UICtrl.getStoredToken().token;
+        // Get the track endpoint
+        const trackEndPoint = e.target.id;
+        //Get the track object
+        const track - await APICtrl.getTrack(token, trackEndPoint);
+        //Load the track details
+        UICtrl.createTrackDetail(track.album.images[2].url, track.name, track.artists[0].name);
+    });
+
+    return {
+        init() {
+            console.log('App is starting');
+            loadGenres();
+        }
+    }
+
+})(UIController, APIController);
+
+//Need to call method to load the genres on page load 
+APPController.init();
