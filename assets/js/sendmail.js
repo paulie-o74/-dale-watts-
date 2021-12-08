@@ -1,7 +1,8 @@
 const quizContainer = document.getElementById('form');
 const container2 = document.getElementById('success');
 
-function sendMail() {
+
+function sendMail(params) {
 var tempParams = {
     from_name: document.getElementById("fromName").value,
     to_name: document.getElementById("email_address").value,
@@ -12,6 +13,7 @@ var tempParams = {
         console.log("success", res.status);
     });
 };
+
 
 
 var a;

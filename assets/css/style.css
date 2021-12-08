@@ -181,48 +181,10 @@ input {
   font-size: 1.5rem;
 }
 
-/* Button styling */
-
-/* .button-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 15px;
-  margin: 20px 20px;
-}
-
-.button1 {
-  border-radius: 5px;
-  border: 3px solid #0b486b;
-  padding: 5px 10px;
-  background-color: #0b486b;
-  color: white;
-}
-
-.button1:hover {
-  border: 3px solid black;
-}
-
-.button-correct {
-  background-color: #9ad49d;
-  color: black;
-}
-
-.button-wrong {
-  background-color: rgb(255, 49, 117);
-  color: black;
-}
-
-.start-button, .next-button {
-  font-size: 1.3rem;
-  font-weight: bold;
-  padding: 5px 10px;
-} */
-
-
-
 .hide {
   display: none;
 }
+
 
 
 /* Footer and social links  */
