@@ -253,5 +253,15 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .footer-index {
+    height: auto;
+  background-color: #ffffff00;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  }
   
 }
