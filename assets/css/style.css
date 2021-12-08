@@ -200,6 +200,13 @@ input {
   align-items: center;
   width: 100%;
 }
+.footer-discover {
+  height: auto;
+  background-color: #ffffff00;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .footer {
   height: auto;
@@ -243,6 +250,22 @@ input {
   color: #0b486b;
 }
 
+.footer-discover ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-discover ul>li {
+  display: inline;
+}
+
+.footer-discover i {
+  font-size: 3rem;
+  padding: 5%;
+  color: #0b486b;
+}
+
 /* Footer and social links  */
 
 /* Media queeries */
@@ -254,8 +277,8 @@ input {
     grid-template-columns: 1fr 1fr;
   }
 
-  .footer-index {
-    height: auto;
+  .footer-discover {
+  height: auto;
   background-color: #ffffff00;
   justify-content: center;
   align-items: center;
