@@ -81,6 +81,10 @@ body {
   min-height: 100vh;
 }
 
+.quiz-body1 {
+  min-height: 120vh;
+}
+
 .quiz-container {
   width: 75%;
   text-align: center;
