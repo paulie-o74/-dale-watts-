@@ -30,7 +30,7 @@ const APIController = (function() {
 
 const _getGenres = async (token) => {
 
-    const result = await fetch(`https://api.spotify.com/v1/browse/categories`, 
+    const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, 
     {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
@@ -44,7 +44,7 @@ const _getGenres = async (token) => {
 const _getPlaylistByGenre = async (token, category_id) => {
 
     const limit = 10;
-    const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists?limit=${limit}`, //template literals embedding expressions directly inside the string
+    const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, //template literals embedding expressions directly inside the string
     {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
@@ -70,7 +70,7 @@ const _getTracks = async (token, tracksEndPoint) => {
 const _getTrack = async (token, trackEndPoint) => {
 
     const limit = 10;
-    const result = await fetch(`${tracksEndPoint}` ,
+    const result = await fetch(`${trackEndPoint}` ,
     {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer' + token}
@@ -91,27 +91,27 @@ return {
     getPlaylistByGenre(token, category_id) {
         return _getPlaylistByGenre(token, category_id);
     },
-    _getTracks(token, tracksEndPoint) {
+    getTracks(token, tracksEndPoint) {
         return _getTracks(token, tracksEndPoint);
     },
-    _getTrack(token, trackEndPoint) {
+    getTrack(token, trackEndPoint) {
         return _getTrack(token, trackEndPoint);
-    },
+    }
 }
 
 })(); //These 2 parenthesis means the function fires immediately
 
 //UI Module
-const UIController = (function () {
+const UIController = (function() {
 
     //Object to hold references to HTML selectors
     const DOMElements = {
         selectGenre: '#select_genre',
         selectPlaylist: '#select_playlist',
-        buttonSubmit: 'btn_submit',
+        buttonSubmit: '#btn_submit',
         divSongDetail: '#song-detail',
-        hfToken: 'hidden_token',
-        divSongList: '.song-list'
+        hfToken: '#hidden_token',
+        divSonglist: '.song-list'
     }
 
     //Public Methods
@@ -120,9 +120,9 @@ const UIController = (function () {
         //Method to get input fields
         inputField() {
             return {
-                genre: document.querySelector(DOMElements.selectGenres),
+                genre: document.querySelector(DOMElements.selectGenre),
                 playlist: document.querySelector(DOMElements.selectPlaylist),
-                tracks: document.querySelector(DOMElements.divSongList),
+                tracks: document.querySelector(DOMElements.divSonglist),
                 submit: document.querySelector(DOMElements.buttonSubmit),
                 songDetail: document.querySelector(DOMElements.divSongDetail)
             }
@@ -142,11 +142,11 @@ const UIController = (function () {
         //need method to create a track list group item
         createTrack(id, name) {
             const html = `<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${id}">${name}</a>`;
-            document.querySelector(DOMElements.divSongList).insertAdjacentHTML('beforeend', html);
+            document.querySelector(DOMElements.divSonglist).insertAdjacentHTML('beforeend', html);
         },
 
         //need method to create the song detail
-        createSongDetail(img, title, artist) {
+        createTrackDetail(img, title, artist) {
 
             const detailDiv = document.querySelector(DOMElements.divSongDetail);
             //any time a user clicks a new song we need to clear out the song detail div
@@ -154,14 +154,14 @@ const UIController = (function () {
 
             const html = 
             `
-            <div class= "row col-sm-12 px-0">
+            <div class="row col-sm-12 px-0">
                 <img src="${img}" alt="">
             </div>
             <div class= "row col-sm-12 px-0">
                 <label for="Genre" class="form-label col-sm-12">${title}:</label>
             </div>
             <div class= "row col-sm-12 px-0">
-            <label for="artist" class="form-label col-sm-12">${artist}:</label>
+            <label for="artist" class="form-label col-sm-12">BY ${artist}:</label>
             </div>
             `;
 
@@ -173,14 +173,22 @@ const UIController = (function () {
         },
 
         resetTracks() {
-            this.inputField().songs.innerHTML = '';
+            this.inputField().tracks.innerHTML = '';
             this.resetTrackDetail();
         },
 
         resetPlaylist() {
             this.inputField().playlist.innerHTML = '';
-            this.resetTracks
+            this.resetTracks();
         }, 
+        storeToken(value) {
+            document.querySelector(DOMElements.hfToken).value = value;
+        },
+        getStoredToken() {
+            return {
+                token: document.querySelector(DOMElements.hfToken).value
+            }
+        }
     }
 })();
 
@@ -235,9 +243,9 @@ const APPController = (function(UICtrl, APICtrl) {
         //Get the selected playlist
         const tracksEndPoint = playlistSelect.options[playlistSelect.selectedIndex].value;
         // Get the tracks from the api
-        const tracks = await APICtrl._getTracks(token, tracksEndPoint);
+        const tracks = await APICtrl.getTracks(token, tracksEndPoint);
         // Populate select list 
-        tracks.forEach(t => UICtrl.createTrack(t.track.href, t.track.name));
+        tracks.forEach(el => UICtrl.createTrack(el.track.href, el.track.name));
     });
 
     //create song selection event listener... This is using event delegation, add the event listener to the parent div and when you click on 
@@ -250,9 +258,9 @@ const APPController = (function(UICtrl, APICtrl) {
         //Get the token
         const token = UICtrl.getStoredToken().token;
         // Get the track endpoint
-        const trackEndPoint = e.target.id;
+        const trackEndpoint = e.target.id;
         //Get the track object
-        const track = await APICtrl.getTrack(token, trackEndPoint);
+        const track = await APICtrl.getTrack(token, trackEndpoint);
         //Load the track details
         UICtrl.createTrackDetail(track.album.images[2].url, track.name, track.artists[0].name);
     });
