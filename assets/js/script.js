@@ -17,27 +17,27 @@ let availableQuestions = []; //empty array for hard coded questions so that we d
 
 let questions = []; // an array remove the hard coded questions afterwards 
 
-fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple')
+fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple') //open api instead of pulling from JSON file hard coded questions 
     .then((res) => {
-        return res.json();
+        return res.json(); //pulls the questions 
     })
     .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map(loadedQuestion => {
+        questions = loadedQuestions.results.map(loadedQuestion => { //map to covert go through the array and map or change to something else 
             const formattedQuestion = {
                 question: loadedQuestion.question,
             };
 
-            const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-            answerChoices.splice(formattedQuestion.answer - 1, 0,
+            const answerChoices = [...loadedQuestion.incorrect_answers]; // using spread operator to get an array
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1; //This will give a random position for the correct answer
+            answerChoices.splice(formattedQuestion.answer - 1, 0, //Then add them in and -1 because one is a 0 based index and dataset isn't 
                 loadedQuestion.correct_answer);
 
-            answerChoices.forEach((choice, index) => {
+            answerChoices.forEach((choice, index) => { //getting references for both as we iterate through the answers
                 formattedQuestion['choice' + (index + 1)] = choice;
             });
-            return formattedQuestion;
+            return formattedQuestion; 
         });
-        startGame();
+        startGame(); //then start the game 
     });
 // .catch((err) => {
 // console.error(err);
