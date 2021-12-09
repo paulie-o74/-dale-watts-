@@ -2,8 +2,10 @@
 const question = document.getElementById('question');
 // We want to return an array so that we can use it... specifically the dataset property which will help determine the correct answers
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+//HUD elements
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
+//loader element while waiting for questions to load
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 // Variables below
@@ -64,7 +66,7 @@ getNewQuestion = () => {
         return window.location.assign("end.html");
     }
     questionCounter++; //This means that the counter will increment each question
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`; //string concatenation to "make" HTML
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length); // To get random questions so that we can randomise the order of questions
     currentQuestion = availableQuestions[questionIndex];
@@ -88,21 +90,23 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
-        const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+        const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //== checks if they are equal but not strictly equal because one is a string and one isn't
+        // to be more concise we can use ternary operator... ? if this is true : if not 
 
-        if (classToApply === "correct") {
+        if (classToApply === "correct") { // to signify to the user if they were right or wrong and this will increment the score via the function below
             incrementScore(CORRECT_BONUS);
         }
 
         selectedChoice.classList.add(classToApply);
 
-        setTimeout(() => {
+        setTimeout(() => { // built in function in JS
             selectedChoice.classList.remove(classToApply);
             getNewQuestion(); //Loads a new question
-        }, 1000);
+        }, 1000); //waits for 1 second before executing this function
     })
 })
 
+// incrementing score
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
