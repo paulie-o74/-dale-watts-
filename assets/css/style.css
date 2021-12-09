@@ -7,7 +7,6 @@ font-family: 'Oswald', sans-serif; */
 /* Basic resets */
 
   *, a,  *::before, *::after {
-    /* box-sizing: border-box; */
     text-decoration: none;
   }
 
@@ -59,14 +58,6 @@ body {
   flex-wrap: wrap;
 }
 
-.container4 {
-  width: 75%;
-  text-align: center;
-  padding: 10px;
-  background-color: white;
-  margin: 20px auto;
-}
-
 
 /* Quiz page styling  */
 
@@ -87,6 +78,8 @@ body {
   box-shadow: 0 0 5px 2px #0b486b;
   margin: 20px auto;
 }
+
+/* Button styling  */
 
 .button1 {
   border-radius: 5px;
@@ -125,7 +118,6 @@ body {
 
 .hud-prefix {
   text-align: center;
-  
 }
 
 /* Loader styling */
