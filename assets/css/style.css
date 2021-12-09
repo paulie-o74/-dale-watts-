@@ -1,4 +1,3 @@
-
 /* font-family: 'Comforter', cursive;
 font-family: 'Oswald', sans-serif; */
 
@@ -6,23 +5,26 @@ font-family: 'Oswald', sans-serif; */
 
 /* Basic resets */
 
-  *, a,  *::before, *::after {
-    text-decoration: none;
-  }
+*,
+a,
+*::before,
+*::after {
+  text-decoration: none;
+}
 
-  a:visited {
-    color: inherit;
-  }
+a:visited {
+  color: inherit;
+}
 
 /* Main body styling */
 
 body {
-    background-image: linear-gradient(to top, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-    width: 100vw;
-    justify-content: center;  
+  background-image: linear-gradient(to top, #bce79e, #aade9d, #9ad49d, #8bca9c, #72bd9b, #5baf99, #46a196, #218b91, #007588, #005e7c, #0b486b);
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  width: 100vw;
+  justify-content: center;
 }
 
 .logo {
@@ -110,6 +112,7 @@ body {
   background-color: rgb(255, 49, 117);
   color: black;
 }
+
 /* heads up display styling */
 #hud {
   display: flex;
@@ -134,8 +137,13 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* form styling */
@@ -183,6 +191,7 @@ input {
   align-items: center;
   width: 100%;
 }
+
 .footer-discover {
   height: auto;
   background-color: #ffffff00;
@@ -196,8 +205,8 @@ input {
   background-color: #ffffff00;
   justify-content: center;
   align-items: center;
-  position:absolute;
-  bottom:0;
+  position: absolute;
+  bottom: 0;
   width: 100%;
 }
 
@@ -254,6 +263,7 @@ input {
 /* Media queeries */
 
 @media only screen and (min-width: 768px) {
+
   /* For desktop: */
   #container3 {
     display: grid;
@@ -261,13 +271,13 @@ input {
   }
 
   .footer-discover {
-  height: auto;
-  background-color: #ffffff00;
-  justify-content: center;
-  align-items: center;
-  position:absolute;
-  bottom:0;
-  width: 100%;
+    height: auto;
+    background-color: #ffffff00;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
-  
+
 }
