@@ -1,4 +1,5 @@
-[ // inJSON files your key value pairings need to be in quotation marks (from arrays)
+// inJSON files your key value pairings need to be in quotation marks (from arrays)
+[ 
     {
         "question": "Inside which HTML element do we put the javascript?",
         "choice1": "<script>",

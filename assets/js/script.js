@@ -54,7 +54,7 @@ startGame = () => {
     availableQuestions = [...questions]; // The three dots means take the question array and spread out all of its items and 
     //put them into a new array we want a full copy so that when changes are made they are reflected in this 
     getNewQuestion(); 
-    game.classList.remove("hide");
+    game.classList.remove("hide"); //When the game is loaded 
     loader.classList.add("hide");
 };
 
