@@ -121,10 +121,10 @@ Shown below are the initial wireframes which changed throughout the development 
 ![Home](assets/images/Index_wireframe.png)
 
 - Discover 
-![About](assets/images/discover_wireframe.png)
+![Discover](assets/images/discover_wireframe.png)
 
 - Quiz 
-![Group Training ](assets/images/discover_wireframe.png)
+![Quiz](assets/images/discover_wireframe.png)
 
 - Contact 
 ![Contact](assets/images/Contact_wireframe.png)
@@ -272,7 +272,7 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home page | Navigate to the type of training you are most interested in | Locating group or private training information | Works as expected |
+| Home page | Navigate to the different options pages offered on the site | Locating quiz, discover, high score and contact pages | Works as expected |
 | Footer - social media links | On any page scroll down to the footer | Find the links to the social media accounts | Works as expected |
 
 
@@ -281,7 +281,7 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Group / Private training pages | Navigate to the Menu  | See training options and descriptions | Works as expected |
+| Quiz page | Navigate to the Menu or the widget on index.html  | Opens quiz page | Works as expected |
 
 
 
@@ -289,15 +289,14 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
-| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+| High scores page | Navigate to the high scores page or complete a quiz | Find ordered list of highscores | Works as expected |
 
 
 4. As a first time user, I want to see the various social media channels
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Gallery | Navigate to the home page or either training page | Find pictures of the classes | Works as expected |
+| Footer - social media links | On any page scroll down to the footer | Find the links to the social media accounts | Works as expected |
 
 
 
@@ -305,22 +304,22 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Group-training page | Navigate to the group training page and locate the class table | Find the class schedule | Works as expected |
+| High scores page | Navigate to the high scores page or complete a quiz | Find ordered list of highscores | Works as expected |
 
 
 6. As a returning user, I want to see new questions constantly offered
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
-| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+| Quiz page | Navigate to the contact page and api pulls new questions | New questions are pulled from API | Works as expected |
+
 
 
 7. As a returning user, I want to see new music reccommendations
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
+| Discover page  | Navigate to the discover page | See regularly updated spotify widget | Works as expected | 
 
 
 
@@ -328,7 +327,8 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About page | Navigate to the contact page and locate the section on Paul Thomas | Read the page | Works as expected |
+| Contact page | Navigate to the contact page and fill in the form | emailJS relays message to personal email | Works as expected |
+
 
 
 
@@ -337,21 +337,19 @@ The website was tested on the following browsers:
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+
 
 
 10. As the site owner, I want users to enjoy the browsing experience and the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Map | On group training page, scroll to the bottom to find embedded map showing class locations | Click on map locations | Works as expected | 
+| Full website | All pages are coherant, well designed and easy to navigate | All links work as expected and navigation is easy and intuitive | Works as expected | 
 
 
 
 ### User stories covered
 - All of the above highlights user stories 1-10 being covered.
-
-
 
 
 ## Bugs
@@ -397,6 +395,7 @@ In order of appearance:
 - Quiz app was built using help from (https://www.youtube.com/watch?v=XWbTKJeSgRQ&ab_channel=JamesQQuick) James Q Quick on youtube
 - Emailjs was built using help from (https://www.youtube.com/watch?v=x7Ewtay0Q78&ab_channel=CodewithVoran) Code with Voran on youtube
 - Show success message was built using help from (https://www.youtube.com/watch?v=YrE62Dzg4oM&ab_channel=HowToCodeSchool) How to code school on youtube
+- Add loader was built using help from https://www.w3schools.com/howto/howto_css_loader.asp 
 - 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) and (https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing) Dani Krossing on youtube. 
 
 ## Acknowledgements
