@@ -155,55 +155,20 @@ The page consists of six pages and the main features include
 ### Logo and Navigation Bar
 <details>
 <summary>Screenshot nav bar</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/navbar.png" width="500">
 </details>
 <details>
 <summary>Screenshot nav bar mobile</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/mobile_nav.png" width="500">
 </details>
-- Featured on all five pages.
-- The navbar is fully responsive and changes to a toggler (hamburger menu) on smaller screens and includes links to the 
+- Featured on all six pages.
+- The navbar is fully responsive and changes to a toggler (hamburger menu) on smaller screens and includes links to the other relevant pages
 - If a user hovers over a nav bar option in desktop mode an animation shows them which option they are choosing. 
-
-### Footer
-<details>
-<summary>Screenshot</summary>
-<img src="assets/images/" width="500">
-</details>
-
-
-### Discover
-<details>
-<summary>Screenshot</summary>
-<img src="assets/images/" width="500">
-</details>
-- 
-
-
-### Quiz 
-<details>
-<summary>Screenshot</summary>
-<img src="assets/images/" width="500">
-</details>
-- 
-
-
-### High Scores
-<details>
-<summary>Screenshot</summary>
-<img src="assets/images/" width="500">
-</details>
-
-
-
-### Contact 
-<details>
-<summary>Screenshot</summary>
-<img src="assets/images/" width="500">
-</details>
 
 
 ### User stories covered
+
+
 - All of the above highlights user stories 1-13 being covered.
 
 
@@ -452,13 +417,14 @@ In order of appearance:
 - Photo by <a href="https://www.flaticon.com/authors/alkhalifi-design">alkhalifi design</a> on <a href="https://www.flaticon.com/premium-icon/trending-topic_3133923">Flaticon</a>
 - Photo by <a href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a> on <a href="https://www.flaticon.com/free-icon/podium_1228297">Flaticon</a>
 - Photo by <a href="https://www.flaticon.com/authors/andrean-prabowo">Andrean Prabowo</a> on <a href="https://www.flaticon.com/premium-icon/headphone_3756812">Flaticon</a>
+- Photo by <a href="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</a> on <a href="https://www.flaticon.com/free-icon/tick_875636?term=success&page=1&position=7&page=1&position=7&related_id=875636&origin=search">Flaticon</a>
   
 ### Code
 In order of appearance:
 - 
 - 
 - 
-- 404 page was build using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) and (https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing) Dani Krossing on youtube. 
+- 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) and (https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing) Dani Krossing on youtube. 
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
