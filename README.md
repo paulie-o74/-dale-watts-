@@ -166,12 +166,6 @@ The page consists of six pages and the main features include
 - If a user hovers over a nav bar option in desktop mode an animation shows them which option they are choosing. 
 
 
-### User stories covered
-
-
-- All of the above highlights user stories 1-13 being covered.
-
-
 ## Validation
 
 ### HTML Validation
@@ -274,7 +268,7 @@ The website was tested on the following browsers:
 
 ### Testing user stories
 
-1. As a first time user, .
+1. As a first time user, I want to know what services are offered by ¡Dale Watts!
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -282,7 +276,7 @@ The website was tested on the following browsers:
 | Footer - social media links | On any page scroll down to the footer | Find the links to the social media accounts | Works as expected |
 
 
-2. As a first time user, .
+2. As a first time user, I want to be able to navigate quickly to a short quiz to test my knowledge
 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -291,7 +285,7 @@ The website was tested on the following browsers:
 
 
 
-3. As a first time user, . 
+3. As a first time user, I want to be able to see my high scores and compare them to others 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -299,7 +293,7 @@ The website was tested on the following browsers:
 | Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
 
 
-4. As a first time user, .
+4. As a first time user, I want to see the various social media channels
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -307,14 +301,14 @@ The website was tested on the following browsers:
 
 
 
-5. As a returning user, .
+5. As a returning user, I want to see my high scores and compare them to others
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Group-training page | Navigate to the group training page and locate the class table | Find the class schedule | Works as expected |
 
 
-6. As a returning user, .
+6. As a returning user, I want to see new questions constantly offered
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -322,7 +316,7 @@ The website was tested on the following browsers:
 | Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
 
 
-7. As a returning user, .
+7. As a returning user, I want to see new music reccommendations
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -330,7 +324,7 @@ The website was tested on the following browsers:
 
 
 
-8. As a returning user, .
+8. As a returning user, I want to make contact with the website owner
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -338,7 +332,7 @@ The website was tested on the following browsers:
 
 
 
-9. As a returning user, .
+9. As the site owner, I want users to interact with my brand, get to know the services offered, and make contact through social media.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -346,7 +340,7 @@ The website was tested on the following browsers:
 | Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
 
 
-10. As a returning user,.
+10. As the site owner, I want users to enjoy the browsing experience and the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -354,30 +348,8 @@ The website was tested on the following browsers:
 
 
 
-11. As the site owner,.
-
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Footer-social media links  | On any page scroll down to the footer | Contact via social media platform of your choice | Works as expected | 
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
-| About page | Navigate to the contact page and locate the section on Paul Thomas | Read the page | Works as expected |
-
-
-
-12. As the site owner, .
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Group / Private training pages | Navigate to the Menu  | See training options and descriptions | Works as expected |
-| Home page | Navigate to the type of training you are most interested in | Locating group or private training information | Works as expected |
-
-
-13. As the site owner, .
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| About page | Navigate to the contact page and locate the section on client testimonies at the bottom of the page | Read the section | Works as expected |
+### User stories covered
+- All of the above highlights user stories 1-10 being covered.
 
 
 
@@ -393,7 +365,7 @@ The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab.
 2. Select Pages from the menu on the left hand-side.
 3. For the source select Branch: master.
-4. After the webpage refreshes automatically a ribbon on the top says: "Your site is published at "https://rashdogg74.github.io/"
+4. After the webpage refreshes automatically a ribbon on the top says: "Your site is published at "https://rashdogg74.github.io/-dale-watts-/"
 
 You can fork the repository by following these steps:
 1. Go to the GitHub repository.
@@ -406,7 +378,7 @@ You can clone the repository by following these steps:
 4. Open Git Bash.
 5. Change the current working directory to the one where you want the cloned directory.
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
-7.Press Enter to create your local clone.
+7. Press Enter to create your local clone.
 
 ## Credits
 Images not referenced below are owned by the developer.
@@ -418,12 +390,13 @@ In order of appearance:
 - Photo by <a href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a> on <a href="https://www.flaticon.com/free-icon/podium_1228297">Flaticon</a>
 - Photo by <a href="https://www.flaticon.com/authors/andrean-prabowo">Andrean Prabowo</a> on <a href="https://www.flaticon.com/premium-icon/headphone_3756812">Flaticon</a>
 - Photo by <a href="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</a> on <a href="https://www.flaticon.com/free-icon/tick_875636?term=success&page=1&position=7&page=1&position=7&related_id=875636&origin=search">Flaticon</a>
+- Photo by <a href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a> on <a href="https://www.flaticon.es/icono-gratis/error-404_1400971?term=404&page=1&position=4&page=1&position=4&related_id=1400971&origin=search">Flaticon</a>
   
 ### Code
 In order of appearance:
-- 
-- 
-- 
+- Quiz app was built using help from (https://www.youtube.com/watch?v=XWbTKJeSgRQ&ab_channel=JamesQQuick) James Q Quick on youtube
+- Emailjs was built using help from (https://www.youtube.com/watch?v=x7Ewtay0Q78&ab_channel=CodewithVoran) Code with Voran on youtube
+- Show success message was built using help from (https://www.youtube.com/watch?v=YrE62Dzg4oM&ab_channel=HowToCodeSchool) How to code school on youtube
 - 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) and (https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing) Dani Krossing on youtube. 
 
 ## Acknowledgements

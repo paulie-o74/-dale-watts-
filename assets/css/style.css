@@ -260,6 +260,14 @@ input {
 
 /* Footer and social links  */
 
+
+ /* 404 styling */
+
+.error {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 /* Media queeries */
 
 @media only screen and (min-width: 768px) {
