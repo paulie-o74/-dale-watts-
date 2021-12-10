@@ -1,7 +1,7 @@
 # Paul Thomas PT
 (Developer: Paul Thomas O´Riordan)
 
-![Mockup image](assets/images/am-i-responsive.png)
+![Mockup image](assets/images/amiresponsive.png)
 
 [Live webpage](https://rashdogg74.github.io/paul_thomas_pt/)
 
