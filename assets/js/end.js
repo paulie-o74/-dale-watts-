@@ -24,5 +24,5 @@ saveHighScore = e => { //get the event
     highScores.sort((a, b) => b.score - a.score) //sorts the scores from high to low
     highScores.splice(5); // only saving the top 5 scores
     localStorage.setItem("highScores", JSON.stringify(highScores)); // here we are converting it to astring 
-    window.location.assign("/") // Then we go back home 
+    window.location.assign("index.html") // Then we go back home 
 };
