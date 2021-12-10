@@ -40,15 +40,22 @@
 ## Project Goals
 
 ### User Goals
-- To 
+- To play a music quiz game
+- To discover new music
+- To save high scores on the website
+- To contact the website owner
 
 ### Site Owner Goals
-- I
+- Offer a fun engaging experience for any user who has an interest in music
+- Increase traffic to the website
+- Draw attention to the brand
+- Provide a fixed point for all navigation relating to the brand
 
 ## User Experience
 
 ### Target Audience
-- In
+- Individuals interested in music and trivia
+- Individuals with spare time on their hands
 
 ### User Requirements and Expectations
 
@@ -64,54 +71,63 @@
 ### User Stories
 
 #### First-time User 
-1. As a first time user, I want to
+1. As a first time user, I want to know what services are offered by ¡Dale Watts!
+2. As a first time user, I want to be able to navigate quickly to a short quiz to test my knowledge
+3. As a first time user, I want to be able to see my high scores and compare them to others
+4. As a first time user, I want to see the various social media channels
 
 #### Returning User
-5. As a returning user, I want to 
+5. As a returning user, I want to see my high scores and compare them to others
+6. As a returning user, I want to see new questions constantly offered
+7. As a returning user, I want to see new music reccommendations
+8. As a returning user, I want to make contact with the website owner
 
 #### Site Owner 
-11. As the site owner, I want
+9. As the site owner, I want users to interact with my brand, get to know the services offered, and make contact through social media.
+10. As the site owner, I want users to enjoy the browsing experience and the quiz. 
 
 ## Design
 
 ### Design Choices
-The webpage was designed with
+The webpage was designed with my own personal style in mind. Cool, sleek, simple design and clear and to the point. Focus was put on the gradient color scheme which works well across all devices.
 
 ### Colour
-For the colour scheme cool and vibrant colors were chosen to reflect the calmness and simplicity of my own character and the services the website offers, as well as being energetic, and inspiring movement and vibrance. 
+For the colour scheme cool and vibrant colors were chosen to reflect the calmness and simplicity of my own character and the services the website offers, as well as being energetic, and inspiring movement through music. 
 <br>
 
-![Colour scheme](assets/images/)
+![Colour scheme](assets/images/Adrift.png)
 
 
 ### Fonts
-
+Comforter was used for the logo, The logic behind this was to make it look edgy and different (as it means "turn it up" in spanish). The rest of the website was styled using Oswald for a clean easy to ready look. 
 <br>
 
 
 ### Structure
 The page is structured in a well known, recognizable, user-friendly, and easy to learn manner. Upon arriving at the website the user sees a familiar type of navigation bar with the business' logo on the left side and the navigation links to the right. 
-The website consists of five separate pages: 
-- A homepage 
+The website consists of six separate pages: 
+- A homepage
+- A quiz page
+- A discover page
+- A contact page 
+- A highscores page
+- An end page (after completing the quiz which a user can only navigate to by completing a quiz)
 
 ### Wireframes
 
 Shown below are the initial wireframes which changed throughout the development process. Reasons include: increasing subject knowledge of UX design and CSS options, removal of bootstrap elements, the need for a cleaner more streamlined design. 
 
 - Home
-![Home](assets/images/)
+![Home](assets/images/Index_wireframe.png)
 
 - Discover 
-![About](assets/images/)
+![About](assets/images/discover_wireframe.png)
 
 - Quiz 
-![Group Training ](assets/images/)
-
-- High Scores
-![Private Training](assets/images/)
+![Group Training ](assets/images/discover_wireframe.png)
 
 - Contact 
-![Contact](assets/images/)
+![Contact](assets/images/Contact_wireframe.png)
 
 
 ## Technologies Used
@@ -134,7 +150,7 @@ Shown below are the initial wireframes which changed throughout the development 
 - Favicon
 
 ## Features
-The page consists of five pages and the main features include 
+The page consists of six pages and the main features include 
 
 ### Logo and Navigation Bar
 <details>
