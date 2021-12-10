@@ -118,7 +118,7 @@ The website consists of six separate pages:
 Shown below are the initial wireframes which changed throughout the development process. Reasons include: increasing subject knowledge of UX design and CSS options, removal of bootstrap elements, the need for a cleaner more streamlined design. 
 
 - Home
-![Home](assets/images/Index_wireframe.png)
+![Home](assets/images/index_wireframe.png)
 
 - Discover 
 ![Discover](assets/images/discover_wireframe.png)
@@ -127,7 +127,7 @@ Shown below are the initial wireframes which changed throughout the development 
 ![Quiz](assets/images/discover_wireframe.png)
 
 - Contact 
-![Contact](assets/images/Contact_wireframe.png)
+![Contact](assets/images/contact_wireframe.png)
 
 
 ## Technologies Used
