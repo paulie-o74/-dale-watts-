@@ -208,6 +208,7 @@ input {
   position: absolute;
   bottom: 0;
   width: 100%;
+  
 }
 
 .footer ul {
@@ -288,4 +289,10 @@ input {
     width: 100%;
   }
 
+}
+
+@media only screen and (max-height:568px ) {
+  .footer   {
+
+}
 }

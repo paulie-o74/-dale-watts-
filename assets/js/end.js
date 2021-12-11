@@ -17,7 +17,7 @@ saveHighScore = e => { //get the event
     e.preventDefault(); // a form will automatically save and submit to a new page... this will stop this (posting to a new page)
 
     const score = {
-        score: Math.floor(Math.random() * 100), //random scores 
+        score: mostRecentScore,
         name: username.value
     }
     highScores.push(score); //adding the most recent score to the array
