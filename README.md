@@ -206,23 +206,23 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. 
 <details>
 <summary>Home</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/accessanbility.png" width="500">
 </details>
 <details>
 <summary>Discover</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/access.png" width="500">
 </details>
 <details>
 <summary>Quiz</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/access.png" width="500">
 </details>
 <details>
 <summary>High Scores</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/access.png" width="500">
 </details>
 <details>
 <summary>Contact</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/access.png" width="500">
 </details>
 
 ### Performance 
@@ -230,23 +230,23 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 
 <details>
 <summary>Home</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/lighthouse1.png" width="500">
 </details>
 <details>
 <summary>Discover</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/lighthouse2.png" width="500">
 </details>
 <details>
 <summary>Quiz</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/Lighthouse3.png" width="500">
 </details>
 <details>
 <summary>High Scores</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/lighthouse4.png" width="500">
 </details>
 <details>
 <summary>Contact</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/lighthouse5.png" width="500">
 </details>
 
 
