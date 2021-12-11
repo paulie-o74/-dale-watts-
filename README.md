@@ -173,30 +173,30 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 
 <details>
 <summary>Home</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/indexhtml.png" width="500">
 </details>
 <details>
 <summary>Discover</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/discovervaildation.png" width="500">
 </details>
 <details>
 <summary>Quiz</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/quizvalid.png" width="500">
 </details>
 <details>
 <summary>High Scores</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/highscoresvalid.png" width="500">
 </details>
 <details>
 <summary>Contact</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/contactvalidation.png" width="500">
 </details>
 
 
 ### CSS Validation
 <details>
 <summary>Screenshot</summary>
-<img src="assets/images/" width="500">
+<img src="assets/images/cssvalidation.png" width="500">
 </details>
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
 
