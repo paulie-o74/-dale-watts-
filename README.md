@@ -356,6 +356,14 @@ The website was tested on the following browsers:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
+| Original plan for quiz was to pull from spotify API and users would guess the song based on listening to the first 30 seconds. It became apparent quite quickly that this would be too much work for this project and was outside of my current ability level | Pull music questions from an quiz API and integrate aspotify widget for the discover music page |
+| Emailjs was sending an email with broken variable | Reach out to support on emailJS, check fields, add second curly braket to one input field |
+| Footer overlapping content in small short screen sizes | Add media queeries |
+| links not working once site had been deployed | Check file paths and adjust them accordingly |
+| Multiple styling issues throughout the page due to display properties | Check css and adjust accordingly while using dev tools for live updates |
+| Success message not displaying after contact form submission | Youtube research and slight changes to existing JS code |
+| Divs on main page not wrapping | Using flex wrap property with media queeries |
+| I would have liked to have included a link to my own personal spotify page but time didn't allow it | No fix neccessary, this can be implemented at a later date |
 
 
 ## Deployment
