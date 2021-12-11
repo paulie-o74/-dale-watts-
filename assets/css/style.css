@@ -154,6 +154,12 @@ body {
   }
 }
 
+/* Discover Spotify widget */
+
+.playlist {
+  width: 100%;
+}
+
 /* form styling */
 
 form {

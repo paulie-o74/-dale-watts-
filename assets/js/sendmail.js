@@ -17,7 +17,7 @@ function sendMail(params) {
         .then(function (res) {
             console.log("success", res.status);
         });
-};
+}
 
 
 //show success message after submitting form via emailJS
@@ -28,5 +28,5 @@ function successMessage() {
         document.getElementById("success").classList.remove("hide");
         document.getElementById("form").classList.add("hide");
         return a = 1;
-    };
-};
+    }
+}

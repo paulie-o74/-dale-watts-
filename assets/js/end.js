@@ -19,10 +19,10 @@ saveHighScore = e => { //get the event
     const score = {
         score: mostRecentScore,
         name: username.value
-    }
+    };
     highScores.push(score); //adding the most recent score to the array
-    highScores.sort((a, b) => b.score - a.score) //sorts the scores from high to low
+    highScores.sort((a, b) => b.score - a.score); //sorts the scores from high to low
     highScores.splice(5); // only saving the top 5 scores
     localStorage.setItem("highScores", JSON.stringify(highScores)); // here we are converting it to astring 
-    return window.location.assign("index.html") // Then we go back home 
+    return window.location.assign("index.html"); // Then we go back home 
 };
