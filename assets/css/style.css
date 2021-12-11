@@ -60,6 +60,12 @@ body {
   flex-wrap: wrap;
 }
 
+#contianer4 {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 /* Quiz page styling  */
 
