@@ -287,6 +287,10 @@ input {
     grid-template-columns: 1fr 1fr;
   }
 
+  #container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .footer-discover {
     height: auto;
     background-color: #ffffff00;
