@@ -178,7 +178,7 @@ input {
 
 #highScoresList {
   list-style: none;
-  margin-bottom: 1rem auto;
+  margin-bottom: 1rem;
   padding-left: 0;
 }
 
