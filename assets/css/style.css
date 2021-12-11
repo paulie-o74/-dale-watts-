@@ -291,8 +291,14 @@ input {
 
 }
 
-@media only screen and (max-height:568px ) {
+@media only screen and (max-height:620px ) {
   .footer   {
-
+    position: static;
+}
+.footer-discover   {
+  position: static;
+}
+.footer-index   {
+  position: static;
 }
 }

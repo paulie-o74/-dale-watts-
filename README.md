@@ -389,6 +389,7 @@ In order of appearance:
 - Photo by <a href="https://www.flaticon.com/authors/andrean-prabowo">Andrean Prabowo</a> on <a href="https://www.flaticon.com/premium-icon/headphone_3756812">Flaticon</a>
 - Photo by <a href="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</a> on <a href="https://www.flaticon.com/free-icon/tick_875636?term=success&page=1&position=7&page=1&position=7&related_id=875636&origin=search">Flaticon</a>
 - Photo by <a href="https://www.flaticon.com/authors/smalllikeart">smalllikeart</a> on <a href="https://www.flaticon.es/icono-gratis/error-404_1400971?term=404&page=1&position=4&page=1&position=4&related_id=1400971&origin=search">Flaticon</a>
+- Photo by <a href="https://www.flaticon.com/authors/rukanicon">rukanicon</a> on <a href="https://www.flaticon.com/free-icon/home_6327063?term=home&page=1&position=86&page=1&position=86&related_id=6327063&origin=search">Flaticon</a>
   
 ### Code
 In order of appearance:
