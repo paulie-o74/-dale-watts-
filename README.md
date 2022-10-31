@@ -3,8 +3,6 @@
 
 ![Mockup image](assets/images/amiresponsive.png)
 
-[Live webpage](https://rashdogg74.github.io/paul_thomas_pt/)
-
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
